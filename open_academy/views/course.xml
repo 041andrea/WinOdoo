@@ -1,0 +1,81 @@
+<odoo>
+    <data> 
+    <!-- open_academy.course tree view-->
+    <record id="open_academy_course_view_tree" model="ir.ui.view">
+        <field name="name"> open_academy.course.view.tree</field>
+        <field name="model">open_academy.course</field>
+        <field name="arch" type="xml">
+           <tree>
+           <field name="title"/>
+           <field name="description"/>
+                
+          </tree>
+        </field>
+    </record>  
+
+        <!-- open_academy.course form view-->
+    <record id="open_academy_course_view_form" model="ir.ui.view">
+        <field name="name"> open_academy.course.view.form</field>
+        <field name="model">open_academy.course</field>
+        <field name="arch" type="xml">
+            <form string="form">
+              <sheet>
+                <group>
+                  <field name="title"/>
+                  <field name="description"/>
+                  <field name="responsible_id"/>
+                </group>
+                <notebook colspan="4">
+                  <page string="Description">
+                      <field name="description" nolabel="1"/>
+                  </page>
+                  <page string="Sessions">
+                                <field name="session_ids">
+                                    <tree string="Registered sessions">
+                                        <field name="name"/>
+                                        <field name="instructor_id"/>
+                                    </tree>
+                                </field>
+                  </page>
+                </notebook>
+              </sheet>         
+            </form>
+       </field>
+    </record>
+
+
+     <!-- BUSCAR -->
+    <record id="demo_test_search" model="ir.ui.view">
+              <field name="name">open_academy.course.view.search</field>
+              <field name="model">open_academy.course</field>
+              <field name="arch" type="xml">
+                <search>
+                      <field name="title"/>
+                      <field name="description"/>
+                      <filter name="my_courses" string="My Courses"
+                            domain="[('responsible_id', '=', uid)]"/>
+                      <group string="Group By">
+                          <filter name="by_responsible" string="Responsible"
+                                context="{'group_by': 'responsible_id'}"/>
+                      </group>
+                </search>
+              </field>
+    </record>
+
+
+     <!-- anular la vista de lista generada automáticamente para el cursos -->
+        <record model="ir.ui.view" id="course_tree_view">
+            <field name="name">course.tree</field>
+            <field name="model">open_academy.course</field>
+            <field name="arch" type="xml">
+                <tree string="Course Tree">
+                    <field name="title"/>
+                    <field name="responsible_id"/>
+                </tree>
+            </field>
+        </record>
+
+        
+
+    </data>
+</odoo>
