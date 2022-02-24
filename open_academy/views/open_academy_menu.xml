@@ -28,6 +28,8 @@
                     parent="menu_open_academy"
                     action="session_list_action"/>
 
+        
+
 
     </data>
 </odoo>
