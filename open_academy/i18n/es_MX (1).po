@@ -65,7 +65,7 @@ msgstr "Cancelar"
 #. module: open_academy
 #: model:ir.model.fields,field_description:open_academy.field_open_academy_session__color
 msgid "Color"
-msgstr ""
+msgstr "color"
 
 #. module: open_academy
 #: model:ir.ui.menu,name:open_academy.configuration_menu
@@ -115,12 +115,12 @@ msgstr "Curso"
 #. module: open_academy
 #: model_terms:ir.ui.view,arch_db:open_academy.course_tree_view
 msgid "Course Tree"
-msgstr ""
+msgstr "Árbol del curso"
 
 #. module: open_academy
 #: model:ir.actions.act_window,name:open_academy.action_list_courses
 msgid "Courses"
-msgstr ""
+msgstr "cursos"
 
 #. module: open_academy
 #: model:ir.model.fields,field_description:open_academy.field_open_academy_course__create_uid
@@ -162,12 +162,12 @@ msgstr "Duración"
 #. module: open_academy
 #: model:ir.model.fields,help:open_academy.field_open_academy_session__duration
 msgid "Duration in days"
-msgstr ""
+msgstr "duracion en dias"
 
 #. module: open_academy
 #: model:ir.model.fields,field_description:open_academy.field_open_academy_session__hours
 msgid "Duration in hours"
-msgstr ""
+msgstr "duracion en horas"
 
 #. module: open_academy
 #: model:ir.model.constraint,message:open_academy.constraint_open_academy_course_title_unique
@@ -192,7 +192,7 @@ msgstr "Formulario"
 #. module: open_academy
 #: model_terms:ir.ui.view,arch_db:open_academy.session_form_view
 msgid "General"
-msgstr ""
+msgstr "general"
 
 #. module: open_academy
 #: model:ir.model.fields,field_description:open_academy.field_open_academy_course__id
@@ -205,20 +205,20 @@ msgstr "Identificación"
 #: code:addons/open_academy/models/course.py:0
 #, python-format
 msgid "Incorrect 'seats' valor"
-msgstr ""
+msgstr "Valor de 'asientos' incorrecto"
 
 #. module: open_academy
 #: code:addons/open_academy/models/course.py:0
 #, python-format
 msgid "Increase seats or remove excess attendees"
-msgstr ""
+msgstr "Aumente los asientos o elimine el exceso de asistentes"
 
 #. module: open_academy
 #: model:ir.model.fields,field_description:open_academy.field_open_academy_session__instructor_id
 #: model:ir.model.fields,field_description:open_academy.field_res_partner__instructor
 #: model:ir.model.fields,field_description:open_academy.field_res_users__instructor
 msgid "Instructor"
-msgstr ""
+msgstr "Instructor"
 
 #. module: open_academy
 #: model:ir.model.fields,field_description:open_academy.field_open_academy_course____last_update
