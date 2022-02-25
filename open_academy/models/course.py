@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from datetime import timedelta
-from odoo import models, fields, api, exceptions
+from odoo import models, fields, api, exceptions, _
 
 
 class course(models.Model):
@@ -19,11 +19,11 @@ class course(models.Model):
         default = dict(default or {})
 
         copied_count = self.search_count(
-            [('title', '=like', u"Copy of {}%".format(self.title))])
+             [('name', '=like', _(u"Copy of {}%").format(self.name))])
         if not copied_count:
-            new_title = u"Copy of {}".format(self.title)
+             new_name = _(u"Copy of {}").format(self.name)
         else:
-            new_title = u"Copy of {} ({})".format(self.title, copied_count)
+            new_name = _(u"Copy of {} ({})").format(self.name, copied_count)
 
         default['title'] = new_title
         return super(Course, self).copy(default)
@@ -82,15 +82,15 @@ class Session(models.Model):
         if self.seats < 0:
             return {
                 'warning': {
-                    'title': "Valor Incorrecto",
-                    'message': "El numero no puede ser neativo",
+                    'title': _("Incorrect 'seats' valor"),
+                    'message': _("The number of available seats may not be negative"),
                 },
             }
         if self.seats < len(self.attendee_ids):
             return {
                 'warning': {
-                    'title': "Demasiados asistentos",
-                    'message': "Aumente los asientos o elimine el exceso de asistentes",
+                    'title': _("Too many attendees"),
+                    'message': _("Increase seats or remove excess attendees"),
                 },
             }
 
@@ -137,4 +137,4 @@ class Session(models.Model):
     def _check_instructor_not_in_attendees(self):
         for r in self:
             if r.instructor_id and r.instructor_id in r.attendee_ids:
-                raise exceptions.ValidationError("El instructor de una sesión no puede ser un asistente")
+                 raise exceptions.ValidationError(_("A session's instructor can't be an attendee"))

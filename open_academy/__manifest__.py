@@ -32,6 +32,7 @@
         'views/open_academy_menu.xml',
         'views/session.xml',
         'views/partner.xml',
+        'views/wizard.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
