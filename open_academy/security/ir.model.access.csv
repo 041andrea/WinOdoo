@@ -3,7 +3,8 @@ access_open_academy_course,access_open_academy_course,model_open_academy_course,
 
 access_open_academy_session,access_open_academy_session,model_open_academy_session,,1,1,1,1
 
-
 course_read_all,course all,model_open_academy_course,,1,0,0,0
 session_read_all,session all,model_open_academy_session,,1,0,0,0
-access_open_academy_wizard,access_open_academy_wizard,model_open_academy_wizard,group_manager,1,1,1,1
+
+
+access_open_academy_wizard,access_open_academy_wizard,model_open_academy_wizard,,1,1,1,1
