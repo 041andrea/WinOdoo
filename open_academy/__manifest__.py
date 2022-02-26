@@ -34,6 +34,7 @@
         'views/partner.xml',
         'views/wizard.xml',
         'report/report.xml',
+        'report/report_details.xml',
 
         
        
