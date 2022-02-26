@@ -33,6 +33,8 @@
         'views/session.xml',
         'views/partner.xml',
         'views/wizard.xml',
+        'report/report.xml',
+
         
        
         
