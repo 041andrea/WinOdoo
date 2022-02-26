@@ -5,6 +5,7 @@
 ![graficas](https://user-images.githubusercontent.com/99842579/155833175-eb966763-f7bd-48aa-b82e-12a1dd61355f.PNG)
 ![informacion de session](https://user-images.githubusercontent.com/99842579/155833191-fb92fe28-a575-43e3-ab9b-0e319eb2876e.PNG)
 ![informacion del curso](https://user-images.githubusercontent.com/99842579/155833221-a04ff1fe-3494-412b-9d11-38dbc5ce52df.PNG)
+![kanban](https://user-images.githubusercontent.com/99842579/155833236-d3140165-8854-48f2-b5ef-9a03e7ee522f.PNG)
 
 
 
